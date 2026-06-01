@@ -92,6 +92,22 @@
             font-size: 1.5rem;
 	    color:#94a3b8;
         }
+        .employment-grid{
+	   display: grid;
+	   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+	.employment-card{
+	   background-color: var(--card-bg);
+	   border-radius: 10px;
+	   border: 1px solid #334155;
+	   padding: 25px;
+	   transition: transform 0.3s;
+	   
+	}
+	.employment-card:hover {
+            transform: translateY(-5px);
+        }
+
         /* Projects Section */
         .projects-grid {
             display: grid;
@@ -160,6 +176,7 @@
 
         <nav>
             <a href="#skills">Skills</a>
+	    <a href="#Experience">Work</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
  	    <a href="#contact">Contact</a>
@@ -171,6 +188,7 @@
             <p>I am a passionate software engineer who helps my team build scalable software solutions and services. I am also an enthusiastic learner of AI and its tools</p>
             <a href="#contact" class="btn">Get In Touch</a>
         </section>
+
         <section id="skills">
             <h2 class="section-title">Skills & Technologies</h2>
             <div class="skills-grid">
@@ -183,6 +201,25 @@
             </div><br>
 <p class="motto">Advancing the art of engineering through continuous learning and technical mastery.</p>
         </section>
+
+	<section id="Experience">
+	    <h3 class="section-title">Work Experience</h3>
+	    <div class="employment-grid">
+		<div class="employment-card">
+		<h3>Software Engineer</h3>
+		<h3>Bose Software Services Pvt Ltd | May 2024 - Present</h3>
+		<p><ul style="padding-left: 20px; margin-top: 10px;">
+                   <li>Collaborated with cross-functional teams in an Agile/Scrum environment, participating in daily stand-ups and sprint planning.</li>
+	           <li>As an Associate Engineer, I optimized SQL queries and managed relational database schemas to improve data retrieval speed and system       
+                   performance.</li>
+                   <li>Developed web applications using HTML, CSS along with the team.
+                   <li>Collaborated with the team in identifying bugs and resolving the tickets to improve the product quality.</li>
+                   </ul>
+                   </p>
+	        </div>
+	    </div>
+	</section>
+        
 	<section id="certifications">
             <h2 class="section-title">Certifications</h2>
 	    <div class="projects-grid">
@@ -211,12 +248,13 @@ NOTE: It's my final year project and included in my curriculum. I did this proje
                     <a href="#" class="project-link">View Project Details →</a>
                 </div>
                 <div class="project-card">
-                    <h3>Movie-Stream-Demo</h3>
-                    <p>A Movie-Stream-Demo clone developed using HTML, and CSS during my 4th semester as a self-initiated project to enhance my front-end development skills.</p>
+                    <h3>Movie-Stream-Demo(Netflix clone)</h3>
+                    <p>A Netflix clone developed using HTML, and CSS during my 4th semester as a self-initiated project to enhance my front-end development skills.</p>
                     <a href="https://maneeshamamillapalli6.github.io/movie-stream-demo/" class="project-link">View Project →</a>
                 </div>
             </div>
         </section>
+ 	
         <section id="contact">
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-info">
