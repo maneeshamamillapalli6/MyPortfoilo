@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="t-p6Y4CU2tq0byfUylUpbKdExcOvPPUhR9N7mMgatrI" />
     <title>My Portfolio</title>
-    <style>
+<style>
         :root {
             --bg-color: #0f172a;
             --text-color: #e2e8f0;
@@ -101,10 +101,24 @@
 	   border-radius: 10px;
 	   border: 1px solid #334155;
 	   padding: 25px;
-	   transition: transform 0.3s;
-	   
+	   transition: transform 0.3s;   
 	}
 	.employment-card:hover {
+            transform: translateY(-5px);
+        }
+
+	.education-grid{
+	   display: grid;
+	   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+	.education-card{
+	   background-color: var(--card-bg);
+	   border-radius: 10px;
+	   border: 1px solid #334155;
+	   padding: 25px;
+	   transition: transform 0.3s;
+	}
+	.education-card:hover { 
             transform: translateY(-5px);
         }
 
@@ -177,6 +191,7 @@
         <nav>
             <a href="#skills">Skills</a>
 	    <a href="#Experience">Work</a>
+	    <a href="#Education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#certifications">Certifications</a>
  	    <a href="#contact">Contact</a>
@@ -219,7 +234,18 @@
 	        </div>
 	    </div>
 	</section>
-        
+
+	<section id="Education">
+	    <h3 class="section-title">Education</h3>
+	    <div class="education-grid">
+		<div class="education-card">
+		<h3>Bachelor of Technology in Computer Science and Engineering</h3>
+		<h4>Prakasam Engineering College affiliated to Jawaharlal Nehru Technological University Kakinada</h4><p><b>Duration:</b> Jan 2021 - May 2024</p>
+		<p><b>CGPA:</b> 7.6</p>
+		<p><b>Core CourseWork:</b> Data Structures & Algorithms, Object-Oriented Programming, Database Management Systems, Software Engineering, Artificial Intelligence.</p>
+	        </div>
+	    </div>
+	</section>
 	<section id="certifications">
             <h2 class="section-title">Certifications</h2>
 	    <div class="projects-grid">
