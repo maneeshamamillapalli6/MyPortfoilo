@@ -291,7 +291,10 @@ NOTE: It's my final year project and included in my curriculum. I did this proje
         </section>
     </main>
     <footer>
-        &copy; 2025 Maneesha Mamillapalli  All rights reserved.
+        <p>&copy; <span id="year"></span> Maneesha Mamillapalli. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
